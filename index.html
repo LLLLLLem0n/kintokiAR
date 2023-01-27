@@ -8,9 +8,11 @@
   </head>
   <body>
     <a-scene embedded arjs>
-      <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-assets timeout="30000">
+        <a-asset-item id="kintoki_gltf" src="kintoki.gltf"></a-asset-item>
+      </a-assets>
+      <a-gltf-model src="kintokie_gltf" position="-5 5 -15" rotation="0 -20 0"></a-gltf-model>
+      <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
 </html>
