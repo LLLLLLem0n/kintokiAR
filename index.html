@@ -12,7 +12,20 @@
             <a-asset-item id="model" src="ddckintoki3.gltf"></a-asset-item>
         </a-assets>
 
-        <a-entity scale="0.2 0.2 0.2" position="0 1 -4" animation-mixer="clip:*" gltf-model="#model" visible="true">
+        <a-entity 
+                  scale="0.2 0.2 0.2" 
+                  position="0 0 -4" 
+                  animation-mixer="clip:*" 
+                  gltf-model="#model" 
+                  visible="true"
+                  shadow="receive: true">
+          
+        <a-entity 
+                  light="type: directional; 
+                  color: #fff; 
+                  castShadow:true;"
+                  position="-10 10 10">
+          
         </a-entity>
 
         <a-light type="ambient" color="#ffffff"></a-light>
